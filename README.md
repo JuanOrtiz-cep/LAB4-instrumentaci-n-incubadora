@@ -69,9 +69,11 @@ Con base en las indicaciones de medida, con un minimo de 45cm x 20cm x22cm se el
 A continuación se realizó la implementación de la galga ó celda a presión, lo primero que se debe hacer es establecer una plataforma fija y estable, de tal manera que se eviten movimientos inestables, inclinaciones no deseadas o valores negativos por las mismas circunstancias. La base fija se realizó con retablos de madera para la base principal que esta fijada al suelo de la caja por medio de tornillos y roscas, también se utilizó una como área de pesaje otro retablo y fue fijado de la misma forma.
 
 Al tener una base fija montada se procede a realizar la calibración de la celda, este mediante un código y un peso conocido, el proceso es colocar el peso sobre la celda y obtenemos un valor, este valor se divide en el peso real del objeto que utilizamos, de tal manera que se calibra. 
-Después de calibrarla usamos otro código para que muestre el peso en tiempo real con un filtro suavizado para que no tarde en reflejar el peso real, todo esto cuidando la estructura y evitando la inestabilidad del sistema, de esta manera la celda de presión queda calibrada y funcionando de manera correcta
+Después de calibrarla usamos otro código para que muestre el peso en tiempo real con un filtro suavizado para que no tarde en reflejar el peso real, todo esto cuidando la estructura y evitando la inestabilidad del sistema, de esta manera la celda de presión queda calibrada y funcionando de manera correcta.
+
 
 <img width="370" height="160" alt="image" src="https://github.com/user-attachments/assets/a454797d-052b-4b0a-800f-4259608fa1d2" />
+
 
 Para la parte del calentamiento se utilizó una bombilla de 53 watts, se realizó un orificio para su entrada exacta y que quedara en la parte alta de la incubadora, el bombillo incluye su conexión a tomacorriente.
 
@@ -86,7 +88,9 @@ Una vez se tiene como pesar y calentar, se implementan el sensor termocupla NTC 
 
 El ventilador es alimentado con baterías de 9v, también puede alimentarse con fuente mostrando mejores resultados.
 
+
 <img width="960" height="1280" alt="image" src="https://github.com/user-attachments/assets/06b02677-80fd-4ad1-be65-d1ef8fe693f9" />
+
 
 
 <img width="183" height="206" alt="image" src="https://github.com/user-attachments/assets/8941bb2e-f1e4-41bd-a5c2-92137c6f06af" />
@@ -249,30 +253,40 @@ void loop() {
 ```
 Mediante una pantalla OLED 128x64 se puede visualizar en directo la temperatura y el peso y como complemento esta el sistema de alerta consistente en un 3 leds. El led verde encendido significa que la temperatura está dentro del rango seguro, el led azul encendido significa que la temperatura esta por debajo de 36 °C y el led rojo encendido significa que sobrepaso el límite de los 37,5 °C.
 
+
 <img width="303" height="404" alt="image" src="https://github.com/user-attachments/assets/f115dbb0-e5ad-4f26-be66-688699012884" />
 Circuito
+
 
 <img width="514" height="273" alt="image" src="https://github.com/user-attachments/assets/249c18f8-8665-4c30-811a-2a2e522b2f10" />
 Temperatura baja y led azul encendido
 
+
 <img width="660" height="342" alt="image" src="https://github.com/user-attachments/assets/86d40383-c536-4300-bec4-f9d6fcfe9fdd" />
 Temperatura alta y led rojo encendido
+
 
 <img width="389" height="249" alt="image" src="https://github.com/user-attachments/assets/124b8d7d-79f4-4a54-99be-aa504491819a" />
 Temperatura en rango seguro y led verde encendido
 
-Resultado final:
+
+# Resultado final:
+
 
 <img width="1600" height="900" alt="image" src="https://github.com/user-attachments/assets/bd5e4753-89c9-4620-9f8c-4ad71f77c96f" />
+
 
 
 <img width="960" height="1280" alt="image" src="https://github.com/user-attachments/assets/e0c8a391-9a8f-46f7-bbf7-94708382de85" />
 
 
+
 <img width="1600" height="900" alt="image" src="https://github.com/user-attachments/assets/4f676d55-e08c-47bf-a4c5-b31aea33efbd" />
 
 
+
 <img width="1600" height="900" alt="image" src="https://github.com/user-attachments/assets/c3cecc6d-a32c-4441-93c4-09f5973c98f2" />
+
 
 
 <img width="494" height="311" alt="image" src="https://github.com/user-attachments/assets/f143a459-6db2-4ea1-b5e9-5ef2059c01d6" />
