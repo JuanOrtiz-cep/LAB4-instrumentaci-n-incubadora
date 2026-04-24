@@ -22,13 +22,13 @@ En este laboratorio se diseñó y construyó un prototipo funcional de incubador
 
 Una incubadora neonatal es un dispositivo médico diseñado para proporcionar al neonato un ambiente controlado similar al vientre materno, garantizando condiciones térmicas adecuadas, protección frente al entorno externo y monitoreo constante de variables fisiológicas [1], [2].
 
-Uno de los parámetros más importantes es la temperatura corporal, la cual debe mantenerse cercana a **37 °C**, especialmente en neonatos prematuros, quienes presentan menor capacidad de termorregulación debido a inmadurez fisiológica y baja cantidad de tejido adiposo [3], [4].
+Uno de los parámetros más importantes es la temperatura corporal, la cual debe mantenerse cercana a 37 °C, especialmente en neonatos prematuros, quienes presentan menor capacidad de termorregulación debido a inmadurez fisiológica y baja cantidad de tejido adiposo [3], [4].
 
 Para lograrlo, las incubadoras emplean sistemas de calefacción por convección forzada, sensores térmicos y controladores automáticos que ajustan el calentamiento según la temperatura interna.
 
 Además del control térmico, también es importante el monitoreo del peso neonatal, ya que permite evaluar crecimiento, hidratación y evolución clínica.
 
-La presente práctica consistió en diseñar una incubadora neonatal a escala capaz de regular temperatura entre **36 °C y 37.5 °C**, medir peso simulado y visualizar el estado operativo mediante indicadores luminosos.
+La presente práctica consistió en diseñar una incubadora neonatal a escala capaz de regular temperatura entre 36 °C y 37.5 °C, medir peso simulado y visualizar el estado operativo mediante indicadores luminosos.
 
 
 ## 2.1 Importancia de la Termorregulació y Peso Neonatal.
