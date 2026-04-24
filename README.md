@@ -86,6 +86,8 @@ Una vez se tiene como pesar y calentar, se implementan el sensor termocupla NTC 
 
 El ventilador es alimentado con baterías de 9v, también puede alimentarse con fuente mostrando mejores resultados.
 
+<img width="960" height="1280" alt="image" src="https://github.com/user-attachments/assets/06b02677-80fd-4ad1-be65-d1ef8fe693f9" />
+
 
 <img width="183" height="206" alt="image" src="https://github.com/user-attachments/assets/8941bb2e-f1e4-41bd-a5c2-92137c6f06af" />
 
@@ -259,6 +261,23 @@ Temperatura alta y led rojo encendido
 <img width="389" height="249" alt="image" src="https://github.com/user-attachments/assets/124b8d7d-79f4-4a54-99be-aa504491819a" />
 Temperatura en rango seguro y led verde encendido
 
+Resultado final:
+
+<img width="1600" height="900" alt="image" src="https://github.com/user-attachments/assets/bd5e4753-89c9-4620-9f8c-4ad71f77c96f" />
+
+
+<img width="960" height="1280" alt="image" src="https://github.com/user-attachments/assets/e0c8a391-9a8f-46f7-bbf7-94708382de85" />
+
+
+<img width="1600" height="900" alt="image" src="https://github.com/user-attachments/assets/4f676d55-e08c-47bf-a4c5-b31aea33efbd" />
+
+
+<img width="1600" height="900" alt="image" src="https://github.com/user-attachments/assets/c3cecc6d-a32c-4441-93c4-09f5973c98f2" />
+
+
+<img width="494" height="311" alt="image" src="https://github.com/user-attachments/assets/f143a459-6db2-4ea1-b5e9-5ef2059c01d6" />
+
+
 ## 5) Costos y comparación
 
 Se realizó el calculo del costo total del sistema desarrollado especificando también el costo
@@ -293,45 +312,11 @@ R/Ambas se usan para el cuidado neonatal y tienen como función principal manten
 
 La incubadora dió resultados bastante positivos respecto a la temperatura, respondió correctamente a las instrucciones dadas, además de poder mantener el interior en la temperatura segura. Respecto al peso, este tenía un de error de aproximadamente del 3%. Este se revisó con una pesa de una 3000g como referencia, sin embargo es importante aclarar que la estabilidad de la base en donde esté la galga es completamente importante y ante ciertos movimientos podría desequilibrarse, incluso con ello consideramos un resultado positivo con enfoque a mejorar dicho defecto.
 
-Reconocemos la importancia de controlar factores como la temperatura, identificando las variables vitales de las cuales un diagnóstico ó la vida de un neonato dependen.
-
-
+Reconocemos la importancia de controlar factores como la temperatura, identificando las variables vitales de las cuales un diagnóstico y la vida de un neonato dependen.
 
 Es completamente factibles controlar variables como la temperatura y el peso, sin duda la correcta elección de insumos, espacios características y ambiente pueden hacer que mejoren los resultado, además que dichas variables son fácilmente comprobables fuera del sistema, por lo cual permite la comprobación cuantitativa y cualitativa de los datos para su calibración.
 
-• Análisis 2: Compare el sistema desarrollado con los que ofrecen los
-fabricantes sugeridos en términos de capacidades, limitaciones y precio.
-
-4. Comparar las prestaciones o capacidades del sistema desarrollado con las que
-ofrecen sistemas comerciales.
+Por otro lado y como se mencionó anteriormente, en comparación con los fabricantes está bien decir que la incubadora cumple con su trabajo, sin embargo los fabricantes incluyen además controles de humedad, alarmas clíncias sonoras, monitoreo de signos vitales y muchas más características, pero esto también demuestra que los equipos, isntrumentación y dispositivos médicos pueden seguir avanzando y adquirir mayor capacidad de mejorar la calidad de vida de los usuarios.
 
 
 
-
-## 8. Comparación con Sistemas Comerciales
-
-| Característica     | Prototipo | Comercial |
-| ------------------ | --------- | --------- |
-| Control térmico    | Sí        | Sí        |
-| Medición peso      | Sí        | Sí        |
-| Humedad controlada | No        | Sí        |
-| Alarmas clínicas   | Básicas   | Avanzadas |
-| Monitoreo vital    | No        | Sí        |
-| Costo              | Bajo      | Alto      |
-
----
-
-
----
-
-## 11. Conclusiones
-
-* Se diseñó exitosamente una incubadora neonatal a escala funcional.
-* El sistema permitió regular temperatura mediante lazo cerrado.
-* La medición de peso complementó el monitoreo básico neonatal.
-* El laboratorio integró conocimientos de electrónica, control e instrumentación biomédica.
-* Se comprendió la alta complejidad y responsabilidad asociada al diseño de equipos médicos neonatales.
-
----
-
-## 12. Referencias
