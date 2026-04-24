@@ -86,6 +86,12 @@ Foto bombilla
 # 2)
 Una vez se tiene como pesar y calentar, se implementan el sensor termocupla NTC 10k B3950, este nos permitiría saber a que temperatura se encuentra el interior de la incubadora, con lo anterior se incluye un sistema de enfriamiento consistente en un ventilador de 12V-100mA, este está instalado en un lateral centrado de la caja con la intención de que se encienda una vez alcanzados los 37 °C, con el fin de que nunca sobrepase el límite de los 37.5 °C, del mismo modo cuando llegué a bajar la temperatura, está programado para que el ventilador vuelva a apagarse, de tal forma que no sigue "enfirando" y así mantener el equilibrio. Esto se visualiza mejor en el código.
 
+El ventilador es alimentado con baterías de 9v, también puede alimentarse con fuente mostrando mejores resultados.
+
+
+<img width="183" height="206" alt="image" src="https://github.com/user-attachments/assets/8941bb2e-f1e4-41bd-a5c2-92137c6f06af" />
+
+
 ```
 #include <OneWire.h>
 #include <DallasTemperature.h>
@@ -241,44 +247,30 @@ void loop() {
 }
 
 ```
+Mediante una pantalla OLED 128x64 se puede visualizar en directo la temperatura y el peso y como complemento esta el sistema de alerta consistente en un 3 leds. El led verde encendido significa que la temperatura está dentro del rango seguro, el led azul encendido significa que la temperatura esta por debajo de 36 °C y el led rojo encendido significa que sobrepaso el límite de los 37,5 °C.
+
+<img width="303" height="404" alt="image" src="https://github.com/user-attachments/assets/f115dbb0-e5ad-4f26-be66-688699012884" />
+
+<img width="514" height="273" alt="image" src="https://github.com/user-attachments/assets/249c18f8-8665-4c30-811a-2a2e522b2f10" />
+Temperatura baja y led azul encendido
+
+<img width="660" height="342" alt="image" src="https://github.com/user-attachments/assets/86d40383-c536-4300-bec4-f9d6fcfe9fdd" />
+Temperatura alta y led rojo encendido
+
+<img width="389" height="249" alt="image" src="https://github.com/user-attachments/assets/124b8d7d-79f4-4a54-99be-aa504491819a" />
+Temperatura en rango seguro y led verde encendido
+
+## 5) Costos y comparación
 
 
-b. La temperatura del interior de la incubadora debe ser regulada mediante
-convección, para lo cual se debe contar con un ventilador pequeño y un
-elemento resistivo que proporcione calor suficiente para mantener el valor
-de esta variable entre 36°C y 37,5°C. Para esto, utilice el circuito diseñado
-previamente (parte A). El sistema debe incluir un panel de 3 LEDs para
-mostrar si la temperatura está o no dentro del rango especificado (i.e., debe
-encender un LED verde si la temperatura está dentro del rango, mientras
-que, si ésta se encuentra por encima o por debajo, encenderá entonces,
-para cada caso un LED rojo).
-c. La incubadora debe contar con una galga o sensor de fuerza que permita
-estimar el peso del recién nacido, el cual deberá mostrarse mediante una
-pantalla LCD, o bien, mediante displays 7-segmentos.
+<img width="437" height="385" alt="image" src="https://github.com/user-attachments/assets/3e500250-b1a7-499f-aa1e-766c3d220ade" />
 
-
-
-
-d. Calcule el costo total del sistema desarrollado especificando también el
-costo parcial de cada una de las partes.
 3. Calcule el costo total del sistema desarrollado especificando también el costo
 parcial de cada una de las partes. Compare esto con soluciones comerciales
 ofrecidas por proveedores como, por ejemplo, Dräguer, Instrumentalia S.A.S. y
 LEEX Medical.
 
-PARTE C
-Documente la práctica explicando paso a paso cuál fue el procedimiento que se
-siguió y dando respuesta a las preguntas que se formulan en la guía (ver Parte
-15). Suministre una breve conclusión y elabore un repositorio en la plataforma
-GitHub que contenga toda la información recopilada en las partes A y B.
-Asegúrese de incluir gráficas con buena resolución. Cada estudiante debe
 
-UNIVERSIDAD MILITAR NUEVA GRANADA
-
-El uso no autorizado de su contenido así como reproducción total o parcial por cualquier persona o entidad, estará en
-contra de los derechos de autor Pagina 9 de 11
-tener su propia cuenta y deben aparecer como colaboradores en el repositorio.
-En caso contrario, solo se calificará al estudiante que aparece como editor.
 
 12.RESULTADOS DE LA PRÁCTICA:
 Al finalizar esta práctica, el estudiante será capaz de:
@@ -292,14 +284,7 @@ ofrecen sistemas comerciales.
 5. Utilizar GitHub como herramienta de documentación y colaboración,
 asegurando la visibilidad del trabajo individual y en grupo.
 La presente práctica se evaluará bajo los siguientes criterios:
-1. Identificación de las partes de una incubadora neonatal, así como la función
-que cada una desempeña (Parte A) 10%
-2. Diseño y simulación del circuito para control de temperatura (Parte A) 15%
-3. Diseño y simulación del circuito para medición de peso (Parte A) 15%
-4. Construcción y validación del funcionamiento de la incubadora neonatal a
-escala (Parte B) 30%
-5. Precio estimado y comparación con sistemas similares (Parte B) 15%
-6. Documentación en GitHub (Parte C) 15%
+
 
 13. ANÁLISIS DE RESULTADOS
 • Análisis 1: Evalúe la eficacia del sistema desarrollado para controlar la
@@ -308,10 +293,6 @@ empleando un patrón con peso conocido.
 • Análisis 2: Compare el sistema desarrollado con los que ofrecen los
 fabricantes sugeridos en términos de capacidades, limitaciones y precio.
 
-UNIVERSIDAD MILITAR NUEVA GRANADA
-
-El uso no autorizado de su contenido así como reproducción total o parcial por cualquier persona o entidad, estará en
-contra de los derechos de autor Pagina 10 de 11
 
 14. CONCLUSIONES
 Tras la realización de la práctica, el estudiante debe concluir incluyendo una breve
@@ -340,39 +321,7 @@ servo-cuna?ados
 * Osciloscopio
 * Pantalla LCD o displays
 
----
 
-## 4.3 Indicadores del Sistema
-
-* **LED Verde:** temperatura dentro del rango.
-* **LED Rojo Bajo:** temperatura menor a 36 °C.
-* **LED Rojo Alto:** temperatura mayor a 37.5 °C.
-
----
-
-## 5. Procedimiento Experimental
-
-### Parte A – Diseño
-
-1. Investigación bibliográfica sobre incubadoras reales.
-2. Simulación del circuito de control térmico.
-3. Simulación del sistema de medición de peso.
-
-### Parte B – Construcción
-
-1. Ensamble de la estructura física transparente.
-2. Instalación del ventilador y calefactor.
-3. Conexión del sensor térmico.
-4. Implementación de LEDs indicadores.
-5. Implementación del sistema de peso.
-
-### Parte C – Validación
-
-1. Medición de estabilidad térmica.
-2. Verificación de respuesta ante cambios externos.
-3. Comparación con valores patrón de peso.
-
----
 
 ## 6. Resultados Esperados
 
