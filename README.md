@@ -7,6 +7,10 @@
 
 # Diseño y Construcción de una Incubadora Neonatal a Escala
 
+Catalina Martínez Franco
+Joseph Rodríguez 
+Juan Esteban Ortiz
+
 Universidad Militar Nueva Granada
 Ingeniería Biomédica
 
@@ -14,9 +18,9 @@ Ingeniería Biomédica
 
 ## 1. Introducción
 
-En este laboratorio se diseñó y construyó un prototipo funcional de incubadora neonatal a escala, orientado al control de variables críticas para la supervivencia del recién nacido, principalmente temperatura y peso. El sistema fue desarrollado mediante principios de electrónica analógica, sensores biomédicos y sistemas de control en lazo cerrado.
+En este laboratorio se diseñó y construyó un prototipo funcional de incubadora neonatal a escala, orientado al control de variables críticas para la supervivencia del recién nacido, principalmente temperatura y peso. El sistema fue desarrollado mediante principios de electrónica analógica, sensores biomédicos y sistemas de control en lazo cerrado. Para este se hace la siguiente revisión bibliográfica.
 
-### Contexto Teórico
+### 2. Marco Teórico
 
 Una incubadora neonatal es un dispositivo médico diseñado para proporcionar al neonato un ambiente controlado similar al vientre materno, garantizando condiciones térmicas adecuadas, protección frente al entorno externo y monitoreo constante de variables fisiológicas [1], [2].
 
@@ -28,68 +32,298 @@ Además del control térmico, también es importante el monitoreo del peso neona
 
 La presente práctica consistió en diseñar una incubadora neonatal a escala capaz de regular temperatura entre **36 °C y 37.5 °C**, medir peso simulado y visualizar el estado operativo mediante indicadores luminosos.
 
----
 
-## 2. Objetivos
+## 2.1 Importancia de la Termorregulació y Peso Neonatal.
 
-### 2.1 Objetivo General
+Los recién nacidos prematuros presentan alta susceptibilidad a padecer hipotermia, hipertermia, deshidratación, estrés metabólico e inestabilidad cardiorrespiratoria. Cuando se habla de una incubadora se habla de un dispositivo que crea un ambiente controlado en temperatura, humedad y ventilación, además de otras posibles variables que ayudan a la vigilancia de un neonato prematuro, por ejemplo el peso. 
+Este ambiente controlado pretende simular un vientre materno y por esto mismo controlar la temperatura es vital, ya que la temperatura de un vientre materno sano es de aproximadamente 36-36,5°C a 37-37,5°C según la fuente. Para ello la incubadora debe mantener temperatura estable dentro de rangos clínicamente seguros.
+Por esto mismo, el peso neonatal es igual de importante y es otro referente que permite detectar alteraciones nutricionales, retención de líquidos o pérdida excesiva de masa corporal, ya que es posible comparar el desarrollo de un neonato en condiciones normales con uno prematuro en incubadora. El peso puede medirse mediante sensores resistivos o galgas extensiométricas.
 
-Desarrollar un sistema electromédico a escala que emule el funcionamiento básico de una incubadora neonatal mediante control automático de temperatura y medición de peso.
-
-### 2.2 Objetivos Específicos
-
-* Identificar las partes principales de una incubadora neonatal real.
-* Diseñar un sistema de control térmico en lazo cerrado.
-* Implementar una medición electrónica de peso.
-* Construir una estructura física funcional a escala.
-* Comparar el sistema desarrollado con incubadoras comerciales reales.
-
----
-
-## 3. Marco Teórico
-
-### 3.1 Importancia de la Termorregulación Neonatal
-
-Los recién nacidos prematuros presentan alta susceptibilidad a:
-
-* Hipotermia
-* Hipertermia
-* Deshidratación
-* Estrés metabólico
-* Inestabilidad cardiorrespiratoria
-
-Por ello, la incubadora debe mantener temperatura estable dentro de rangos clínicamente seguros.
-
-### 3.2 Sistema de Control en Lazo Cerrado
+## 2.2 Sistema de Control en Lazo Cerrado
 
 Un sistema de lazo cerrado compara la temperatura medida con una referencia deseada y corrige automáticamente el error.
-
 e(t)=T_{ref}-T(t)
-
 Donde:
-
 * (T_{ref}): temperatura deseada
 * (T(t)): temperatura real interna
 
-### 3.3 Medición de Peso
-
-El peso neonatal permite detectar alteraciones nutricionales, retención de líquidos o pérdida excesiva de masa corporal. Puede medirse mediante sensores resistivos o galgas extensiométricas.
-
 ---
 
-## 4. Diseño del Sistema
+## 3. Objetivos
 
-## 4.1 Variables Controladas
+### 3.1 Objetivo General
 
-| Variable       | Rango Deseado             |
-| -------------- | ------------------------- |
-| Temperatura    | 36 °C – 37.5 °C           |
-| Peso           | Visualización electrónica |
-| Estado térmico | LEDs                      |
+Reconocer la importancia de las incubadoras neonatales en la salud del neonato.
 
+### 3.2 Objetivos Específicos
+
+- Identificar las partes principales que componen una incubadora neonatal.
+- Desarrollar un sistema que emule el modo de operación de una incubadora
+neonatal.
+- Evaluar cómo impacta el control de variables como temperatura, humedad y
+flujo de aire en la salud del neonato.
 ---
 
-## 4.2 Componentes Utilizados
+## 4. Diseño de la incubadora neonatal a escala
+# 1) 
+Con base en las indicaciones de medida, con un minimo de 45cm x 20cm x22cm se eligío una caja plástica común de medidas exactas de 41cm x 29cm x 17.3cm, quedando corta en terminos de altura, esto se pretendía equilibrar con una base o cúpula que tuviera mayor altura, sin embargo por facilidad y simetría no se cambió. De igual forma la caja seleccionada es transparente, para poder tener la visibilidad deseada.
+
+A continuación se realizó la implementación de la galga ó celda a presión, lo primero que se debe hacer es establecer una plataforma fija y estable, de tal manera que se eviten movimientos inestables, inclinaciones no deseadas o valores negativos por las mismas circunstancias. La base fija se realizó con retablos de madera para la base principal que esta fijada al suelo de la caja por medio de tornillos y roscas, también se utilizó una como área de pesaje otro retablo y fue fijado de la misma forma.
+
+Al tener una base fija montada se procede a realizar la calibración de la celda, este mediante un código y un peso conocido, el proceso es colocar el peso sobre la celda y obtenemos un valor, este valor se divide en el peso real del objeto que utilizamos, de tal manera que se calibra. 
+Después de calibrarla usamos otro código para que muestre el peso en tiempo real con un filtro suavizado para que no tarde en reflejar el peso real, todo esto cuidando la estructura y evitando la inestabilidad del sistema, de esta manera la celda de presión queda calibrada y funcionando de manera correcta
+
+<img width="370" height="160" alt="image" src="https://github.com/user-attachments/assets/a454797d-052b-4b0a-800f-4259608fa1d2" />
+
+Para la parte del calentamiento se utilizó una bombilla de 53 watts, se realizó un orificio para su entrada exacta y que quedara en la parte alta de la incubadora, el bombillo incluye su conexión a tomacorriente.
+
+
+
+<img width="960" height="1280" alt="image" src="https://github.com/user-attachments/assets/e4011d76-1f38-4811-b26d-5ef209d66e30" />
+
+Foto bombilla
+
+# 2)
+Una vez se tiene como pesar y calentar, se implementan el sensor termocupla NTC 10k B3950, este nos permitiría saber a que temperatura se encuentra el interior de la incubadora, con lo anterior se incluye un sistema de enfriamiento consistente en un ventilador de 12V-100mA, este está instalado en un lateral centrado de la caja con la intención de que se encienda una vez alcanzados los 37 °C, con el fin de que nunca sobrepase el límite de los 37.5 °C, del mismo modo cuando llegué a bajar la temperatura, está programado para que el ventilador vuelva a apagarse, de tal forma que no sigue "enfirando" y así mantener el equilibrio. Esto se visualiza mejor en el código.
+
+```
+#include <OneWire.h>
+#include <DallasTemperature.h>
+#include "HX711.h"
+#include <Wire.h>
+#include <Adafruit_GFX.h>
+#include <Adafruit_SSD1306.h>
+
+//oled
+#define SCREEN_WIDTH 128
+#define SCREEN_HEIGHT 64
+
+Adafruit_SSD1306 display(SCREEN_WIDTH, SCREEN_HEIGHT, &Wire, -1);
+
+//TEMPERATURA
+#define PIN_TEMP 18
+#define PIN_FAN 23  
+#define LED_VERDE 19
+#define LED_BAJO 2
+#define LED_ALTO 15 
+
+OneWire oneWire(PIN_TEMP);
+DallasTemperature sensors(&oneWire);
+
+float temp;
+
+//BALANZA
+#define DT 4
+#define SCK 5
+
+HX711 celda;
+
+float factor_calibracion = 433.91812865497;
+float peso_filtrado = 0;
+
+//
+void setup() {
+  Serial.begin(115200);
+
+  // OLED
+  Wire.begin(21, 22);
+  if(!display.begin(SSD1306_SWITCHCAPVCC, 0x3C)) {
+    Serial.println("Fallo OLED");
+    while(true);
+  }
+  display.clearDisplay();
+  display.setTextColor(WHITE); // 🔥 IMPORTANTE
+
+  // Temperatura
+  pinMode(LED_VERDE, OUTPUT);
+  pinMode(LED_BAJO, OUTPUT);
+  pinMode(LED_ALTO, OUTPUT);
+  pinMode(PIN_FAN, OUTPUT);
+  sensors.begin();
+
+  // Balanza
+  celda.begin(DT, SCK);
+  celda.set_scale(factor_calibracion);
+
+  delay(2000);
+  celda.tare();
+
+  Serial.println("Sistema listo");
+}
+
+//control 
+void loop() {
+
+  // TEMP
+  sensors.requestTemperatures();
+  temp = sensors.getTempCByIndex(0);
+
+  Serial.print("Temp (C): ");
+  Serial.print(temp);
+
+  // CONTROL DE TEMPERATURA Y LEDS
+  if (temp > 37.5) {
+  
+  digitalWrite(LED_VERDE, LOW);
+  digitalWrite(LED_BAJO, LOW);
+  digitalWrite(LED_ALTO, HIGH);
+  } 
+  else if (temp > 37) {
+    digitalWrite(PIN_FAN, HIGH);
+
+    digitalWrite(LED_VERDE, HIGH);
+    digitalWrite(LED_BAJO, LOW);
+    digitalWrite(LED_ALTO, LOW);
+  }
+  else if (temp > 36) {
+    
+    digitalWrite(LED_VERDE, HIGH);
+    digitalWrite(LED_BAJO, LOW);
+    digitalWrite(LED_ALTO, LOW);
+  }
+  else if (temp < 36) {
+  digitalWrite(PIN_FAN, LOW);
+
+  digitalWrite(LED_VERDE, LOW);
+  digitalWrite(LED_BAJO, HIGH);
+  digitalWrite(LED_ALTO, LOW);
+  }
+  else {
+  // Dentro del rango
+  digitalWrite(PIN_FAN, LOW);
+
+  digitalWrite(LED_VERDE, HIGH);
+  digitalWrite(LED_BAJO, LOW);
+  digitalWrite(LED_ALTO, LOW);
+  }
+
+  //BALANZA
+  float lectura = celda.get_units(3);
+
+  peso_filtrado = 0.5 * peso_filtrado + 0.5 * lectura;
+
+  if (abs(peso_filtrado) < 2.0) {
+    peso_filtrado = 0;
+  }
+
+  Serial.print(" | Peso (g): ");
+  Serial.println(peso_filtrado, 2);
+
+  // OLED
+  display.clearDisplay();
+
+  //Temperatura T
+  display.setTextSize(1);
+  display.setCursor(0, 0);
+  display.println("Temp");
+
+  display.setTextSize(2);
+  display.setCursor(15, 10);
+  display.print(temp, 1);
+  display.print(" C");
+
+  // linea
+  display.drawLine(0, 32, 128, 32, WHITE);
+
+  // ---- PESO ----
+  display.setTextSize(1);
+  display.setCursor(0, 36);
+  display.println("Peso");
+
+  display.setTextSize(2);
+  display.setCursor(15, 46);
+  display.print(peso_filtrado, 1);
+  display.print(" g");
+
+  display.display();
+
+  delay(150);
+}
+
+```
+
+
+b. La temperatura del interior de la incubadora debe ser regulada mediante
+convección, para lo cual se debe contar con un ventilador pequeño y un
+elemento resistivo que proporcione calor suficiente para mantener el valor
+de esta variable entre 36°C y 37,5°C. Para esto, utilice el circuito diseñado
+previamente (parte A). El sistema debe incluir un panel de 3 LEDs para
+mostrar si la temperatura está o no dentro del rango especificado (i.e., debe
+encender un LED verde si la temperatura está dentro del rango, mientras
+que, si ésta se encuentra por encima o por debajo, encenderá entonces,
+para cada caso un LED rojo).
+c. La incubadora debe contar con una galga o sensor de fuerza que permita
+estimar el peso del recién nacido, el cual deberá mostrarse mediante una
+pantalla LCD, o bien, mediante displays 7-segmentos.
+
+
+
+
+d. Calcule el costo total del sistema desarrollado especificando también el
+costo parcial de cada una de las partes.
+3. Calcule el costo total del sistema desarrollado especificando también el costo
+parcial de cada una de las partes. Compare esto con soluciones comerciales
+ofrecidas por proveedores como, por ejemplo, Dräguer, Instrumentalia S.A.S. y
+LEEX Medical.
+
+PARTE C
+Documente la práctica explicando paso a paso cuál fue el procedimiento que se
+siguió y dando respuesta a las preguntas que se formulan en la guía (ver Parte
+15). Suministre una breve conclusión y elabore un repositorio en la plataforma
+GitHub que contenga toda la información recopilada en las partes A y B.
+Asegúrese de incluir gráficas con buena resolución. Cada estudiante debe
+
+UNIVERSIDAD MILITAR NUEVA GRANADA
+
+El uso no autorizado de su contenido así como reproducción total o parcial por cualquier persona o entidad, estará en
+contra de los derechos de autor Pagina 9 de 11
+tener su propia cuenta y deben aparecer como colaboradores en el repositorio.
+En caso contrario, solo se calificará al estudiante que aparece como editor.
+
+12.RESULTADOS DE LA PRÁCTICA:
+Al finalizar esta práctica, el estudiante será capaz de:
+1. Identificar las variables físicas que afectan directamente la supervivencia del
+recién nacido.
+2. Desarrollar un sistema capaz de imitar el modo de operación de una
+incubadora neonatal.
+3. Aplicar conocimientos de circuitos electrónicos y sistemas de control.
+4. Comparar las prestaciones o capacidades del sistema desarrollado con las que
+ofrecen sistemas comerciales.
+5. Utilizar GitHub como herramienta de documentación y colaboración,
+asegurando la visibilidad del trabajo individual y en grupo.
+La presente práctica se evaluará bajo los siguientes criterios:
+1. Identificación de las partes de una incubadora neonatal, así como la función
+que cada una desempeña (Parte A) 10%
+2. Diseño y simulación del circuito para control de temperatura (Parte A) 15%
+3. Diseño y simulación del circuito para medición de peso (Parte A) 15%
+4. Construcción y validación del funcionamiento de la incubadora neonatal a
+escala (Parte B) 30%
+5. Precio estimado y comparación con sistemas similares (Parte B) 15%
+6. Documentación en GitHub (Parte C) 15%
+
+13. ANÁLISIS DE RESULTADOS
+• Análisis 1: Evalúe la eficacia del sistema desarrollado para controlar la
+temperatura de la cabina, así como también el error en el cálculo del peso,
+empleando un patrón con peso conocido.
+• Análisis 2: Compare el sistema desarrollado con los que ofrecen los
+fabricantes sugeridos en términos de capacidades, limitaciones y precio.
+
+UNIVERSIDAD MILITAR NUEVA GRANADA
+
+El uso no autorizado de su contenido así como reproducción total o parcial por cualquier persona o entidad, estará en
+contra de los derechos de autor Pagina 10 de 11
+
+14. CONCLUSIONES
+Tras la realización de la práctica, el estudiante debe concluir incluyendo una breve
+reflexión sobre la factibilidad de controlar con gran precisión variables como
+temperatura y peso.
+15. PREGUNTAS PARA LA DISCUSIÓN
+• Pregunta 1: ¿Qué otras variables (y por qué) además de las aquí
+mencionadas son críticas en el monitoreo neonatal?
+• Pregunta 2: ¿Qué haría falta para convertir el sistema desarrollado en una
+incubadora neonatal real?
+• Pregunta 3: ¿Qué semejanzas hay entre una incubadora neonatal y una
+servo-cuna?ados
 
 * Fuente DC
 * Ventilador pequeño
