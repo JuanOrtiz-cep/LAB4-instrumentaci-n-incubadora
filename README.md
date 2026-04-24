@@ -266,70 +266,47 @@ parcial de cada una de las partes, dando como resultado total yn gasto de 154850
 
 <img width="437" height="385" alt="image" src="https://github.com/user-attachments/assets/3e500250-b1a7-499f-aa1e-766c3d220ade" />
 
-Al momento de comparar con los proveedores comerciales se puede ver que aunque directamente no publican los precios, ya que estos dependen de la ditribución, país y cotizante, igualmente tienen un rango que va desde los 18.000.000 hasta los 150.000.000 Pesos Colombianos, teniendo el precio más caro Dräger, con el modelo  Babyleo TN500 (150.000.000). Este modelo incluye todo lo de una incubadora normal, adicional tiene IncuWarmer, Modo canguro integrado, Fototerapia integrada, Conectividad UCIN y logicamente cuenta con todas las normativas de la más alta calidad
+Al momento de comparar con los proveedores comerciales se puede ver que aunque directamente no publican los precios, ya que estos dependen de la ditribución, país y cotizante, igualmente tienen un rango que va desde los 18.000.000 hasta los 150.000.000 Pesos Colombianos, teniendo el precio más caro Dräger, con el modelo  Babyleo TN500 (150.000.000). Este modelo incluye todo lo de una incubadora normal, adicional tiene IncuWarmer, Modo canguro integrado, Fototerapia integrada, Conectividad UCIN y logicamente cuenta con todas las normativas de la más alta calidad.
+
+Está claro que la diferencia entre el precio la incubadora de la presente practica y las incubadoras comerciales es gigante, del mismo modo conocemos las diferencias en calidad, de una incubadora neonatal se espera la más alta seguridad en sus mediciones, así como características "extra" que añaden beneficios al entorno de vida de una persona que requiera estos servicios de los cuales depende plenamente la vida de una neonato prematuro.
+
+Dicho esto, no se espera que los precios sean parecidos a esta incubadora de fines académicos, pero si se puede tener en cuenta para cuestionarse que tan alta es la calidad, que tan grande y efectivo es dicho sistema como para que tengan dichos precios, aspi como analizar que diferencia unas líneas o marcas de otras, así como que tantas diferencias hay incluso entre las marcas comerciales como para que pueda haber diferencia de 132.000.000 pesos colombianos.
+
+## 6)
+
+PREGUNTAS PARA LA DISCUSIÓN
+* Pregunta 1: ¿Qué otras variables (y por qué) además de las aquí
+mencionadas son críticas en el monitoreo neonatal?
+
+R/ Otras variables esenciales clave para una incubadora neonatal serían la humedad relativa debido a que se necesita controlar la perdida de agua por evaporación, también la concentración de oxigeno dada por FiO2 con el fin de evitar hipoxia o hiperoxia,  además del monitoreo de algunos signos vitales del bebé, como frecuencia cardiaca, frecuencia respiratoria, y saturación de oxígeno, por otra parte también variables que tienen que ver más con el dispositivo como las vibraciones pues estas pueden afectar el desarrollo cognitivo del bebé junto con ruido e iluminación. 
+
+* Pregunta 2: ¿Qué haría falta para convertir el sistema desarrollado en una
+incubadora neonatal real?
+
+R/ Para convertir lo que tenemos en una incubadora real se necesita un isstema que lea y controle eficazmente las variables anteriormente mencionadas, y cumpla con las normas de bioseguridad dadas en las ISO.
+* Pregunta 3: ¿Qué semejanzas hay entre una incubadora neonatal y una
+servo-cuna?
+
+R/Ambas se usan para el cuidado neonatal y tienen como función principal mantener la temperatura corporal del recién nacido. Las dos pueden trabajar con servo-control mediante sensor cutáneo, permiten monitoreo continuo, poseen alarmas de seguridad y se utilizan en unidades neonatales para bebés prematuros o de riesgo.
+
+## 7) ANÁLISIS Y CONCLUSIONES
+
+La incubadora dió resultados bastante positivos respecto a la temperatura, respondió correctamente a las instrucciones dadas, además de poder mantener el interior en la temperatura segura. Respecto al peso, este tenía un de error de aproximadamente del 3%. Este se revisó con una pesa de una 3000g como referencia, sin embargo es importante aclarar que la estabilidad de la base en donde esté la galga es completamente importante y ante ciertos movimientos podría desequilibrarse, incluso con ello consideramos un resultado positivo con enfoque a mejorar dicho defecto.
+
+Reconocemos la importancia de controlar factores como la temperatura, identificando las variables vitales de las cuales un diagnóstico ó la vida de un neonato dependen.
 
 
 
-Al finalizar esta práctica, el estudiante será capaz de:
-1. Identificar las variables físicas que afectan directamente la supervivencia del
-recién nacido.
-2. Desarrollar un sistema capaz de imitar el modo de operación de una
-incubadora neonatal.
-3. Aplicar conocimientos de circuitos electrónicos y sistemas de control.
+Es completamente factibles controlar variables como la temperatura y el peso, sin duda la correcta elección de insumos, espacios características y ambiente pueden hacer que mejoren los resultado, además que dichas variables son fácilmente comprobables fuera del sistema, por lo cual permite la comprobación cuantitativa y cualitativa de los datos para su calibración.
+
+• Análisis 2: Compare el sistema desarrollado con los que ofrecen los
+fabricantes sugeridos en términos de capacidades, limitaciones y precio.
+
 4. Comparar las prestaciones o capacidades del sistema desarrollado con las que
 ofrecen sistemas comerciales.
 
 
 
-13. ANÁLISIS DE RESULTADOS
-• Análisis 1: Evalúe la eficacia del sistema desarrollado para controlar la
-temperatura de la cabina, así como también el error en el cálculo del peso,
-empleando un patrón con peso conocido.
-• Análisis 2: Compare el sistema desarrollado con los que ofrecen los
-fabricantes sugeridos en términos de capacidades, limitaciones y precio.
-
-
-14. CONCLUSIONES
-Tras la realización de la práctica, el estudiante debe concluir incluyendo una breve
-reflexión sobre la factibilidad de controlar con gran precisión variables como
-temperatura y peso.
-15. PREGUNTAS PARA LA DISCUSIÓN
-• Pregunta 1: ¿Qué otras variables (y por qué) además de las aquí
-mencionadas son críticas en el monitoreo neonatal?
-• Pregunta 2: ¿Qué haría falta para convertir el sistema desarrollado en una
-incubadora neonatal real?
-• Pregunta 3: ¿Qué semejanzas hay entre una incubadora neonatal y una
-servo-cuna?ados
-
-
-
-## 6. Resultados Esperados
-
-### 6.1 Control de Temperatura
-
-El sistema logró mantener la temperatura dentro del intervalo requerido con oscilaciones pequeñas alrededor del punto de ajuste.
-
-### 6.2 Sistema de Peso
-
-La lectura simulada mostró respuesta proporcional al peso aplicado.
-
-### 6.3 Señalización Visual
-
-Los LEDs respondieron correctamente según la condición térmica interna.
-
----
-
-## 7. Análisis de Resultados
-
-El prototipo evidenció que el control térmico es una de las funciones más críticas en incubadoras neonatales. Pequeñas desviaciones de temperatura pueden comprometer la estabilidad fisiológica del neonato.
-
-El uso de sensores térmicos junto con realimentación permitió automatizar el sistema y mantener condiciones cercanas a las requeridas clínicamente.
-
-La medición de peso complementa el monitoreo integral, siendo indispensable en unidades neonatales.
-
-Aunque el modelo construido es académico, reproduce principios fundamentales presentes en incubadoras comerciales modernas.
-
----
 
 ## 8. Comparación con Sistemas Comerciales
 
