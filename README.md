@@ -1,10 +1,7 @@
- # LAB4-instrumentaci-n-incubadora
+# LAB4-instrumentación-incubadora
 
 
 # README.md
-
-
-## LAB 4 – Instrumentación Biomédica
 
 # Diseño y Construcción de una Incubadora Neonatal a Escala
 
@@ -251,6 +248,7 @@ void loop() {
 Mediante una pantalla OLED 128x64 se puede visualizar en directo la temperatura y el peso y como complemento esta el sistema de alerta consistente en un 3 leds. El led verde encendido significa que la temperatura está dentro del rango seguro, el led azul encendido significa que la temperatura esta por debajo de 36 °C y el led rojo encendido significa que sobrepaso el límite de los 37,5 °C.
 
 <img width="303" height="404" alt="image" src="https://github.com/user-attachments/assets/f115dbb0-e5ad-4f26-be66-688699012884" />
+Circuito
 
 <img width="514" height="273" alt="image" src="https://github.com/user-attachments/assets/249c18f8-8665-4c30-811a-2a2e522b2f10" />
 Temperatura baja y led azul encendido
@@ -263,17 +261,15 @@ Temperatura en rango seguro y led verde encendido
 
 ## 5) Costos y comparación
 
+Se realizó el calculo del costo total del sistema desarrollado especificando también el costo
+parcial de cada una de las partes, dando como resultado total yn gasto de 154850 Pesos Colombianos.
 
 <img width="437" height="385" alt="image" src="https://github.com/user-attachments/assets/3e500250-b1a7-499f-aa1e-766c3d220ade" />
 
-3. Calcule el costo total del sistema desarrollado especificando también el costo
-parcial de cada una de las partes. Compare esto con soluciones comerciales
-ofrecidas por proveedores como, por ejemplo, Dräguer, Instrumentalia S.A.S. y
-LEEX Medical.
+Al momento de comparar con los proveedores comerciales se puede ver que aunque directamente no publican los precios, ya que estos dependen de la ditribución, país y cotizante, igualmente tienen un rango que va desde los 18.000.000 hasta los 150.000.000 Pesos Colombianos, teniendo el precio más caro Dräger, con el modelo  Babyleo TN500 (150.000.000). Este modelo incluye todo lo de una incubadora normal, adicional tiene IncuWarmer, Modo canguro integrado, Fototerapia integrada, Conectividad UCIN y logicamente cuenta con todas las normativas de la más alta calidad
 
 
 
-12.RESULTADOS DE LA PRÁCTICA:
 Al finalizar esta práctica, el estudiante será capaz de:
 1. Identificar las variables físicas que afectan directamente la supervivencia del
 recién nacido.
@@ -282,9 +278,7 @@ incubadora neonatal.
 3. Aplicar conocimientos de circuitos electrónicos y sistemas de control.
 4. Comparar las prestaciones o capacidades del sistema desarrollado con las que
 ofrecen sistemas comerciales.
-5. Utilizar GitHub como herramienta de documentación y colaboración,
-asegurando la visibilidad del trabajo individual y en grupo.
-La presente práctica se evaluará bajo los siguientes criterios:
+
 
 
 13. ANÁLISIS DE RESULTADOS
@@ -306,21 +300,6 @@ mencionadas son críticas en el monitoreo neonatal?
 incubadora neonatal real?
 • Pregunta 3: ¿Qué semejanzas hay entre una incubadora neonatal y una
 servo-cuna?ados
-
-* Fuente DC
-* Ventilador pequeño
-* Elemento calefactor resistivo
-* Termistor
-* LM317 / LM337
-* Puente rectificador
-* Capacitores 2200 µF
-* Resistencias varias
-* LEDs (verde y rojo)
-* Protoboard
-* Cables UTP
-* Multímetro
-* Osciloscopio
-* Pantalla LCD o displays
 
 
 
@@ -365,21 +344,6 @@ Aunque el modelo construido es académico, reproduce principios fundamentales pr
 
 ---
 
-## 9. Aplicaciones Biomédicas
-
-* Entrenamiento académico.
-* Enseñanza de sistemas de control médico.
-* Prototipado de bajo costo.
-* Investigación en neonatología tecnológica.
-
----
-
-## 10. Limitaciones
-
-* No apta para uso clínico real.
-* Sin control de humedad.
-* Sin monitoreo cardíaco o respiratorio.
-* Escalamiento simplificado.
 
 ---
 
@@ -394,13 +358,3 @@ Aunque el modelo construido es académico, reproduce principios fundamentales pr
 ---
 
 ## 12. Referencias
-
-[1] C. G. K. Tran et al., “Designing a low-cost multifunctional infant incubator,” *J. Lab. Autom.*, 2014.
-
-[2] L. Restrepo-Pérez et al., “Prototipo de incubadora neonatal,” *Revista Ingeniería Biomédica*, 2007.
-
-[3] European Foundation for the Care of Newborn Infants, *Temperature management in newborn infants*, 2018.
-
-[4] R. B. Knobel-Dail, “Role of effective thermoregulation in premature neonates,” *Research and Reports in Neonatology*, 2014.
-
-[5] 
