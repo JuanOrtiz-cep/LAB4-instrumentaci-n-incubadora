@@ -142,7 +142,7 @@ void setup() {
     while(true);
   }
   display.clearDisplay();
-  display.setTextColor(WHITE); // 🔥 IMPORTANTE
+  display.setTextColor(WHITE); 
 
   // Temperatura
   pinMode(LED_VERDE, OUTPUT);
@@ -295,7 +295,7 @@ Temperatura en rango seguro y led verde encendido
 ## 5) Costos y comparación
 
 Se realizó el calculo del costo total del sistema desarrollado especificando también el costo
-parcial de cada una de las partes, dando como resultado total yn gasto de 154850 Pesos Colombianos.
+parcial de cada una de las partes, dando como resultado total un gasto de 154850 Pesos Colombianos.
 
 <img width="437" height="385" alt="image" src="https://github.com/user-attachments/assets/3e500250-b1a7-499f-aa1e-766c3d220ade" />
 
@@ -330,7 +330,18 @@ Reconocemos la importancia de controlar factores como la temperatura, identifica
 
 Es completamente factibles controlar variables como la temperatura y el peso, sin duda la correcta elección de insumos, espacios características y ambiente pueden hacer que mejoren los resultado, además que dichas variables son fácilmente comprobables fuera del sistema, por lo cual permite la comprobación cuantitativa y cualitativa de los datos para su calibración.
 
-Por otro lado y como se mencionó anteriormente, en comparación con los fabricantes está bien decir que la incubadora cumple con su trabajo, sin embargo los fabricantes incluyen además controles de humedad, alarmas clíncias sonoras, monitoreo de signos vitales y muchas más características, pero esto también demuestra que los equipos, isntrumentación y dispositivos médicos pueden seguir avanzando y adquirir mayor capacidad de mejorar la calidad de vida de los usuarios.
+Por otro lado y como se mencionó anteriormente, en comparación con los fabricantes está bien decir que la incubadora cumple con su trabajo, sin embargo los fabricantes incluyen además controles de humedad, alarmas clíncias sonoras, monitoreo de signos vitales y muchas más características, pero esto también demuestra que los equipos, instrumentación y dispositivos médicos pueden seguir avanzando y adquirir mayor capacidad de mejorar la calidad de vida de los usuarios.
+
+
+## Bibliografía
+
+[1] C. G. K. Tran et al., “Designing a low-cost multifunctional infant incubator,” J. Lab. Autom., 2014.
+
+[2] L. Restrepo-Pérez et al., “Prototipo de incubadora neonatal,” Revista Ingeniería Biomédica, 2007.
+
+[3] European Foundation for the Care of Newborn Infants, Temperature management in newborn infants, 2018.
+
+[4] R. B. Knobel-Dail, “Role of effective thermoregulation in premature neonates,” Research and Reports in Neonatology, 2014.
 
 
 
